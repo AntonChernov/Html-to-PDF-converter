@@ -12,7 +12,7 @@ def test_pdf(type_of_data, filename, url=None):
     if type_of_data == '1':
         pdfkit.from_url('{0}'.format(url), str(os.getcwd()) + '/{0}.pdf'.format(filename), options=options)
     else:
-        pdfkit.from_string('/home/tito/Рабочий стол/test/b_text.html', '{0}.pdf'.format(filename))
+        pdfkit.from_string('/********/b_text.html', '{0}.pdf'.format(filename))
         # pdfkit.from_file(css='/static/css/styles.css')
 
 
